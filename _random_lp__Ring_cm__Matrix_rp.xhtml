@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>  <!-- for emacs: -*- coding: utf-8 -*- -->
+<!-- Apache may like this line in the file .htaccess: AddCharset utf-8 .html -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0 plus SVG 1.1//EN"	 "http://www.w3.org/2002/04/xhtml-math-svg/xhtml-math-svg.dtd" >
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head><title>random(Ring,Matrix) -- produces a minimal matrix of random forms</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link rel="stylesheet" type="text/css" href="/usr/share/Macaulay2/Style/doc.css"/>
+</head>
+<body>
+<table class="buttons">
+  <tr>
+    <td><div>next | <a href="_min__Betti.xhtml">previous</a> | forward | <a href="_min__Betti.xhtml">backward</a> | up | <a href="index.html">top</a> | <a href="master.xhtml">index</a> | <a href="toc.xhtml">toc</a> | <a href="http://www.math.uiuc.edu/Macaulay2/">Macaulay2 web site</a></div>
+
+    </td>
+  </tr>
+</table>
+<div><a href="index.html" title="Bundles On Pn with vanishing lower cohomologies">BundlesOnPn</a> :: <a href="_random_lp__Ring_cm__Matrix_rp.xhtml" title="produces a minimal matrix of random forms">random(Ring,Matrix)</a></div>
+<hr/>
+<div><h1>random(Ring,Matrix) -- produces a minimal matrix of random forms</h1>
+<div class="single"><h2>Synopsis</h2>
+<ul><li><dl class="element"><dt>Usage: </dt><dd><tt>N = random(R,M)</tt></dd></dl>
+</li>
+<li><span>Function: <a href="/usr/share/doc/Macaulay2/Macaulay2Doc/html/_random.xhtml" title="get a random element">random</a></span></li>
+<li><div class="single">Inputs:<ul><li><span><tt>R</tt>, <span>a <a href="/usr/share/doc/Macaulay2/Macaulay2Doc/html/___Ring.xhtml">ring</a></span></span></li>
+<li><span><tt>M</tt>, <span>a <a href="/usr/share/doc/Macaulay2/Macaulay2Doc/html/___Matrix.xhtml">matrix</a></span>, of integers specifying the degrees of the random forms of R</span></li>
+</ul>
+</div>
+</li>
+<li><div class="single"><a href="/usr/share/doc/Macaulay2/Macaulay2Doc/html/_using_spfunctions_spwith_spoptional_spinputs.xhtml">Optional inputs</a>:<ul><li><span><a href="/usr/share/doc/Macaulay2/Macaulay2Doc/html/_random_lp__Module_cm__Module_rp.xhtml">Density => ...</a>, </span></li>
+<li><span><a href="/usr/share/doc/Macaulay2/Macaulay2Doc/html/_random_lp__Type_rp.xhtml">Height => ...</a>, </span></li>
+<li><span><a href="/usr/share/doc/Macaulay2/Macaulay2Doc/html/_random_lp__Module_cm__Module_rp.xhtml">MaximalRank => ...</a>, </span></li>
+<li><span><a href="/usr/share/doc/Macaulay2/Macaulay2Doc/html/_random_lp__Module_cm__Module_rp.xhtml">UpperTriangular => ...</a>, </span></li>
+</ul>
+</div>
+</li>
+<li><div class="single">Outputs:<ul><li><span><tt>N</tt>, <span>a <a href="/usr/share/doc/Macaulay2/Macaulay2Doc/html/___Matrix.xhtml">matrix</a></span>, of random forms in R of degrees specified by M</span></li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="single"><h2>Description</h2>
+<div><div><p>This function produces a matrix of random forms in a ring R whose degrees are given by a matrix of integers</p>
+</div>
+<table class="examples"><tr><td><pre>i1 : random(ZZ[x,y],matrix{{1,1,2},{2,1,1}})
+
+o1 = | 8x+y        3x+7y 8x2+3xy+3y2 |
+     | 7x2+8xy+8y2 5x+7y 8x+5y       |
+
+                      2                3
+o1 : Matrix (ZZ[x, y])  &lt;--- (ZZ[x, y])</pre>
+</td></tr>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>
+

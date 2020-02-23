@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>  <!-- for emacs: -*- coding: utf-8 -*- -->
+<!-- Apache may like this line in the file .htaccess: AddCharset utf-8 .html -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0 plus SVG 1.1//EN"	 "http://www.w3.org/2002/04/xhtml-math-svg/xhtml-math-svg.dtd" >
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head><title>bundleSequences -- produces bundle sequences to a given degree</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link rel="stylesheet" type="text/css" href="/usr/share/Macaulay2/Style/doc.css"/>
+</head>
+<body>
+<table class="buttons">
+  <tr>
+    <td><div><a href="_is__Admissible.xhtml">next</a> | <a href="index.html">previous</a> | <a href="_is__Admissible.xhtml">forward</a> | <a href="index.html">backward</a> | up | <a href="index.html">top</a> | <a href="master.xhtml">index</a> | <a href="toc.xhtml">toc</a> | <a href="http://www.math.uiuc.edu/Macaulay2/">Macaulay2 web site</a></div>
+
+    </td>
+  </tr>
+</table>
+<div><a href="index.html" title="Bundles On Pn with vanishing lower cohomologies">BundlesOnPn</a> :: <a href="_bundle__Sequences.xhtml" title="produces bundle sequences to a given degree">bundleSequences</a></div>
+<hr/>
+<div><h1>bundleSequences -- produces bundle sequences to a given degree</h1>
+<div class="single"><h2>Synopsis</h2>
+<ul><li><dl class="element"><dt>Usage: </dt><dd><tt>L = bundleSequence(n,r,d)</tt></dd></dl>
+</li>
+<li><div class="single">Inputs:<ul><li><span><tt>n</tt>, <span>an <a href="/usr/share/doc/Macaulay2/Macaulay2Doc/html/___Z__Z.xhtml">integer</a></span>, dimension of ambient projective space</span></li>
+<li><span><tt>r</tt>, <span>an <a href="/usr/share/doc/Macaulay2/Macaulay2Doc/html/___Z__Z.xhtml">integer</a></span>, rank of the bundle sequences</span></li>
+<li><span><tt>d</tt>, <span>an <a href="/usr/share/doc/Macaulay2/Macaulay2Doc/html/___Z__Z.xhtml">integer</a></span>, degree bound of the bundle sequences</span></li>
+</ul>
+</div>
+</li>
+<li><div class="single">Outputs:<ul><li><span><tt>L</tt>, <span>a <a href="/usr/share/doc/Macaulay2/Macaulay2Doc/html/___List.xhtml">list</a></span>, of bundle sequences on Pn of rank r and degree &lt;= d</span></li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="single"><h2>Description</h2>
+<div><div><p>This function generates all bundle sequences on Pn of rank r and degree &lt;= d recursively.</p>
+</div>
+<table class="examples"><tr><td><pre>i1 : bundleSequences(3,4,9)
+
+o1 = {{4}, {1, 4}, {1, 1, 4}, {1, 1, 1, 4}, {1, 1, 1, 1, 4}, {1, 1, 1, 1, 1,
+     ------------------------------------------------------------------------
+     4}, {1, 1, 1, 2, 4}, {1, 1, 2, 4}, {1, 1, 3, 4}, {1, 2, 4}, {1, 2, 2,
+     ------------------------------------------------------------------------
+     4}, {1, 3, 4}, {2, 4}, {2, 2, 4}, {2, 3, 4}, {3, 4}, {5, 4}}
+
+o1 : List</pre>
+</td></tr>
+</table>
+</div>
+</div>
+<div class="single"><h2>See also</h2>
+<ul><li><span><tt>isBundleSequence</tt> (missing documentation<!-- tag: isBundleSequence -->)</span></li>
+</ul>
+</div>
+<div class="waystouse"><h2>Ways to use <tt>bundleSequences</tt> :</h2>
+<ul><li>bundleSequences(ZZ,ZZ,ZZ)</li>
+</ul>
+</div>
+</div>
+</body>
+</html>
+
